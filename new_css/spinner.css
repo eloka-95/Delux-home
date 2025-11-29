@@ -1,0 +1,58 @@
+/* spinner.css */
+#loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.de-luxe-spinner-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.de-luxe-spinner-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-top: 1px solid #CFB53B;
+    border-bottom: 1px solid #CFB53B;
+    border-radius: 50%;
+    animation: de-luxe-rotate 1.5s linear infinite;
+}
+
+.de-luxe-logo-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.de-luxe-company-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes de-luxe-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

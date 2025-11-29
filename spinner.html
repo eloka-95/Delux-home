@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE-LUXE HOMES - Loading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Spinner Container */
+        .spinner-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Simple Golden Spinner Ring */
+        .spinner-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid transparent;
+            border-top: 1px solid #CFB53B;
+            border-bottom: 1px solid #CFB53B;
+            /* border-left: 1px solid #CFB53B; */
+            border-radius: 50%;
+            animation: rotate 1.5s linear infinite;
+        }
+
+        /* Logo Container */
+        .logo-container {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .company-logo {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Fullscreen Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.92);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Animation */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spinner-container">
+        <div class="spinner-ring"></div>
+        <div class="logo-container">
+            <img src="wp-content/uploads/sites/1544/2025/07/logo.png" class="company-logo" alt="DE-LUXE HOMES" />
+        </div>
+    </div>
+
+    <script>
+        console.log("DE-LUXE HOMES Loading Animation Ready");
+    </script>
+</body>
+
+</html>
